@@ -166,7 +166,7 @@ export class Tab1Page implements OnInit {
           //this.addPageConfig(doc);
         }
         //this.addPageConfig(doc);
-        doc.addImage(imageData, 'JPG', 0, currentPageHeight, width, height);
+        doc.addImage(imageData, 'JPG', 0, currentPageHeight - footerHeight, width, height);
         currentPageHeight += height;
         contSections++;
         if (contSections === totalSections) {
